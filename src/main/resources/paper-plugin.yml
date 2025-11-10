@@ -1,0 +1,11 @@
+name: CommandProxy
+version: '1.1'
+main: org.extstudios.commandProxy.CommandProxy
+description: Converts commands to lowercase before forwarding to other plugins and create aliases for popular commands.
+api-version: '1.21'
+authors: [ eextr0 ]
+
+permissions:
+  commandproxy.reload:
+    description: Allows reloading the plugin config
+    default: op

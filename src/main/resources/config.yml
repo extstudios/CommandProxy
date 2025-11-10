@@ -1,0 +1,39 @@
+# CommandLowercaseProxy Configuration
+# This plugin intercepts commands and converts them to lowercase before forwarding
+
+# target-commands: List of specific commands to intercept
+# Leave empty or remove this section to intercept ALL commands
+# Only the command name should be listed (without the /)
+
+target-commands: []
+  # Example: Uncomment and add your commands here
+  # - "warp"
+  # - "home"
+  # - "tpa"
+  # - "spawn"
+# If you want to intercept ALL commands, just leave the list empty like this:
+# target-commands: []
+
+# Or delete the target-commands section entirely
+
+# The plugin supports:
+# - Bukkit/Spigot plugin.yml commands
+# - Old Paper reflection-based commands
+# - New Paper Brigadier API commands
+
+command-aliases:
+# Example: /bed runs /home bed
+# bed: "home bed"
+
+# Example with arguments: /h <name> runs /home <name>
+# h: "home {args}"
+
+# Example with player name: /suicide runs /kill <player>
+# suicide: "kill {player}"
+
+# Example combining both: /tphere <player> runs /tp <player> <you>
+# tphere: "tp {args} {player}"
+# The plugin supports:
+# - Bukkit/Spigot plugin.yml commands
+# - Old Paper reflection-based commands
+# - New Paper Brigadier API commands
